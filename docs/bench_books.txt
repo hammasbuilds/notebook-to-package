@@ -1,0 +1,45 @@
+  .. 359 notebooks
+  .. 20/359 - 5 faithful, 0 broken, 11 unrunnable
+  .. 40/359 - 10 faithful, 0 broken, 25 unrunnable
+  .. 60/359 - 12 faithful, 0 broken, 43 unrunnable
+  .. 80/359 - 23 faithful, 0 broken, 52 unrunnable
+  .. 100/359 - 32 faithful, 0 broken, 63 unrunnable
+  .. 120/359 - 36 faithful, 0 broken, 78 unrunnable
+  .. 140/359 - 45 faithful, 0 broken, 80 unrunnable
+  .. 160/359 - 53 faithful, 0 broken, 84 unrunnable
+  .. 180/359 - 61 faithful, 0 broken, 89 unrunnable
+  .. 200/359 - 67 faithful, 0 broken, 94 unrunnable
+  .. 220/359 - 67 faithful, 0 broken, 114 unrunnable
+  .. 240/359 - 71 faithful, 0 broken, 122 unrunnable
+  .. 260/359 - 77 faithful, 0 broken, 135 unrunnable
+  .. 280/359 - 79 faithful, 0 broken, 150 unrunnable
+  .. 300/359 - 79 faithful, 0 broken, 160 unrunnable
+  .. 320/359 - 86 faithful, 0 broken, 173 unrunnable
+  .. 340/359 - 87 faithful, 0 broken, 190 unrunnable
+==========================================================================
+CONVERSION FIDELITY - C:\Users\dell\AppData\Local\Temp\claude\d--github\9ecf52ac-9133-4b3a-8b8b-0b0e578e4abb\scratchpad\nbcorpus
+==========================================================================
+291 notebooks attempted, 1932.3s
+
+    204  the notebook itself did not run here - excluded, nothing can be concluded
+     87  both sides ran, so the conversion can be judged
+     87  faithful (100.0%)
+      0  broken
+
+  22 notebooks produced 80 values that differ between two runs of the notebook itself
+  (excluded - the conversion cannot be blamed for a value the notebook does not reproduce)
+
+Why the excluded notebooks did not run:
+    107  ModuleNotFoundError
+     29  OSError
+     20  NameError
+     10  FileNotFoundError
+      9  AttributeError
+      9  TypeError
+      8  ValueError
+      6  timed out after 60s
+      2  SystemExit
+      2  ZeroDivisionError
+
+
+wrote docs\bench_books.json

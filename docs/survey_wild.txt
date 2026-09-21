@@ -1,0 +1,45 @@
+==========================================================================
+NOTEBOOK SURVEY - C:\Users\dell\AppData\Local\Temp\claude\d--github\9ecf52ac-9133-4b3a-8b8b-0b0e578e4abb\scratchpad\nbwild2
+==========================================================================
+106 notebooks found
+106 analysed, 3264 code cells
+
+Of the notebooks analysed:
+     70    66%  provably run top to bottom in a fresh kernel
+     35    33%  use a name that is never defined anywhere
+     10     9%  use a name before the cell that defines it
+     16    15%  were last run out of document order
+     73    69%  contain a cell that was never run
+     63    59%  contain IPython magics or shell escapes
+     23    22%  star-import, so the question is undecidable
+     28    26%  contain a cell that does not parse
+
+Most common magics:
+    318  !shell
+     42  %pip
+     28  %matplotlib
+     23  %cd
+      5  %time
+      3  %tensorboard
+      2  %timeit
+      2  %reload_ext
+
+Most undefined names:
+   31  Machine-Learning/Auto_Model_Training_and_Evaluation_.ipynb
+       MiceImputed, Optimiser, Predictor, Reader, assign_model, blend_models, compare_models, create_model
+   22  Financial-Data-Science-in-Python/Miscellaneous_Equity_Correlation_without_Factors.ipynb
+       CountLabels, GoldenRatio, PercentLabels, display, download, edof, half, hundred
+   19  Financial-Data-Science-in-Python/Alphas_Market_Return_by_Political_Party.ipynb
+       ARX, CountLabels, GARCH2, GeneralizedError2, GoldenRatio, PercentLabels, display, download
+   19  Financial-Data-Science-in-Python/Miscellaneous_Index_Pairwise_Correlations.ipynb
+       CountLabels, GoldenRatio, PercentLabels, display, download, five, hundred, loadindex
+   19  Financial-Data-Science-in-Python/Miscellaneous_Long_Term_Analysis_of_Equities_and_Gold.ipynb
+       CurrencyLabels, GoldenRatio, PercentLabels, display, download, four, get_fred, half
+   19  Financial-Data-Science-in-Python/Miscellaneous_Longer_Term_Crypto_Degrees_of_Freedom.ipynb
+       CountLabels, GoldenRatio, PercentLabels, datetime, display, download, five, hundred
+   18  Financial-Data-Science-in-Python/60_40_Equities_and_Gold.ipynb
+       CountLabels, GoldenRatio, PercentLabels, display, download, four, half, hundred
+   18  Financial-Data-Science-in-Python/Alphas_Retail_Crypto_Universe_Return_by_Ticker_Rank.ipynb
+       ARX, GARCH2, GeneralizedError2, GoldenRatio, PercentLabels, display, half, hundred
+
+wrote docs\survey_wild.json

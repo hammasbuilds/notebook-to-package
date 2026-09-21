@@ -1,0 +1,27 @@
+  .. 106 notebooks
+  .. 20/106 - 0 faithful, 0 broken, 20 unrunnable
+  .. 40/106 - 2 faithful, 0 broken, 38 unrunnable
+  .. 60/106 - 4 faithful, 0 broken, 56 unrunnable
+  .. 80/106 - 4 faithful, 0 broken, 76 unrunnable
+  .. 100/106 - 4 faithful, 0 broken, 96 unrunnable
+==========================================================================
+CONVERSION FIDELITY - C:\Users\dell\AppData\Local\Temp\claude\d--github\9ecf52ac-9133-4b3a-8b8b-0b0e578e4abb\scratchpad\nbwild2
+==========================================================================
+106 notebooks attempted, 195.6s
+
+    102  the notebook itself did not run here - excluded, nothing can be concluded
+      4  both sides ran, so the conversion can be judged
+      4  faithful (100.0%)
+      0  broken
+
+Why the excluded notebooks did not run:
+     89  ModuleNotFoundError
+      7  FileNotFoundError
+      2  NameError
+      1  ValueError
+      1  timed out after 60s
+      1  InvalidParameterError
+      1  TypeError
+
+
+wrote docs\bench_wild.json

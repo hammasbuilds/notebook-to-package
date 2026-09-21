@@ -1,0 +1,1103 @@
+{
+  "root": "C:\\Users\\dell\\AppData\\Local\\Temp\\claude\\d--github\\9ecf52ac-9133-4b3a-8b8b-0b0e578e4abb\\scratchpad\\nbwild2",
+  "seconds": 195.6,
+  "attempted": 106,
+  "unrunnable": 102,
+  "decided": 4,
+  "faithful": 4,
+  "broken": 0,
+  "package_only_failed": 0,
+  "package_timed_out": 0,
+  "notebooks_with_nondeterminism": 0,
+  "nondeterministic_values_excluded": 0,
+  "fidelity": 1.0,
+  "notebook_error_kinds": [
+    [
+      "ModuleNotFoundError",
+      89
+    ],
+    [
+      "FileNotFoundError",
+      7
+    ],
+    [
+      "NameError",
+      2
+    ],
+    [
+      "ValueError",
+      1
+    ],
+    [
+      "timed out after 60s",
+      1
+    ],
+    [
+      "InvalidParameterError",
+      1
+    ],
+    [
+      "TypeError",
+      1
+    ]
+  ],
+  "failures": [],
+  "notebooks": [
+    {
+      "path": "Financial-Data-Science-in-Python/60_40_Equities_and_Gold.ipynb",
+      "cells": 7,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Alphas_Filter_Rules.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Alphas_Market_Return_by_Dates.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Alphas_Market_Return_by_Payday.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Alphas_Market_Return_by_Political_Party.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Alphas_Retail_Crypto_Universe_Return_by_Meme_Coin.ipynb",
+      "cells": 7,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Alphas_Retail_Crypto_Universe_Return_by_Ticker_Rank.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Miscellaneous_60_40_Equities_and_Gold.ipynb",
+      "cells": 5,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Miscellaneous_Continuous_Time_Finance.ipynb",
+      "cells": 4,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Miscellaneous_Crypto_Degrees_of_Freedom.ipynb",
+      "cells": 8,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Miscellaneous_Direction_Statistics.ipynb",
+      "cells": 4,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Miscellaneous_Equity_Correlation_without_Factors.ipynb",
+      "cells": 12,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Miscellaneous_Generating_Multivariate_Random_Numbers.ipynb",
+      "cells": 8,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Miscellaneous_Index_Pairwise_Correlations.ipynb",
+      "cells": 14,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Miscellaneous_Long_Term_Analysis_of_Equities_and_Gold.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Miscellaneous_Longer_Term_Crypto_Degrees_of_Freedom.ipynb",
+      "cells": 14,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Financial-Data-Science-in-Python/Miscellaneous_S&P_500_Pairwise_Correlations.ipynb",
+      "cells": 7,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'my_library'"
+    },
+    {
+      "path": "Machine-Learning/1_28_2020_Supervised_learning_with_Sklearn.ipynb",
+      "cells": 71,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'google'"
+    },
+    {
+      "path": "Machine-Learning/6_21_26_Supervised_(Classification)_ML_Model_Training_and_Evulation.ipynb",
+      "cells": 289,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/Agglomerative_Clustering_using_scikit_learn.ipynb",
+      "cells": 13,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'cars_clus.csv'"
+    },
+    {
+      "path": "Machine-Learning/Andrew_Linear_Regression_Exercise_1_By_Fida_Mohammad.ipynb",
+      "cells": 27,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'google'"
+    },
+    {
+      "path": "Machine-Learning/Anomaly_Detection.ipynb",
+      "cells": 12,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'google'"
+    },
+    {
+      "path": "Machine-Learning/Anomaly_Detection_using_Python_Library_.ipynb",
+      "cells": 18,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'google'"
+    },
+    {
+      "path": "Machine-Learning/Anomaly_Detection_using_Using_Gaussian_Mixture_Models.ipynb",
+      "cells": 13,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'google'"
+    },
+    {
+      "path": "Machine-Learning/Anomaly_Detection_with_PyCaret.ipynb",
+      "cells": 26,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/Association_rule_Mining.ipynb",
+      "cells": 7,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'mlxtend'"
+    },
+    {
+      "path": "Machine-Learning/Auto_Model_Training_and_Evaluation_.ipynb",
+      "cells": 145,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/Build_Machine_Learning_Pipelines.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ValueError: The 'liblinear' solver does not support multiclass classification (n_classes >= 3). Either use another solver or wrap the estimator in a OneVsRestClassifier to keep applying a one-versus-rest scheme."
+    },
+    {
+      "path": "Machine-Learning/Clustering_With_Pycaret.ipynb",
+      "cells": 31,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/Collaborative_Filtering.ipynb",
+      "cells": 12,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'google'"
+    },
+    {
+      "path": "Machine-Learning/Data_Exploratory_and_Ploting.ipynb",
+      "cells": 120,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/Data_Processing_in_Python_.ipynb",
+      "cells": 209,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/DBSCAN_Clustering_in_Machine_Learning.ipynb",
+      "cells": 19,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/Machine-Learning-master/Datasets/CC GENERAL.csv'"
+    },
+    {
+      "path": "Machine-Learning/Distance_Measure_.ipynb",
+      "cells": 4,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 3,
+      "nondeterministic": 0
+    },
+    {
+      "path": "Machine-Learning/Exploring_Correlation_10_14_21.ipynb",
+      "cells": 77,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/Feature_extraction.ipynb",
+      "cells": 18,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/Feature_Selection_10_14_21.ipynb",
+      "cells": 212,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'google'"
+    },
+    {
+      "path": "Machine-Learning/Fine_Tuning_your_model.ipynb",
+      "cells": 34,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "timed out after 60s"
+    },
+    {
+      "path": "Machine-Learning/KNN_with_Python_.ipynb",
+      "cells": 11,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 12,
+      "nondeterministic": 0
+    },
+    {
+      "path": "Machine-Learning/Linear_Regression_Andrew.ipynb",
+      "cells": 15,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'google'"
+    },
+    {
+      "path": "Machine-Learning/Machine_Learning.ipynb",
+      "cells": 71,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'google'"
+    },
+    {
+      "path": "Machine-Learning/ML0101EN_RecSys_Collaborative_Filtering_movies_py_v1.ipynb",
+      "cells": 29,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'movies.csv'"
+    },
+    {
+      "path": "Machine-Learning/ML0101EN_RecSys_Content_Based_movies_py_v1.ipynb",
+      "cells": 19,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'movies.csv'"
+    },
+    {
+      "path": "Machine-Learning/Model_Selecton.ipynb",
+      "cells": 20,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "InvalidParameterError: The 'cv' parameter of CalibratedClassifierCV must be an int in the range [2, inf), an object implementing 'split' and 'get_n_splits', an iterable or None. Got 'prefit' instead."
+    },
+    {
+      "path": "Machine-Learning/Pandas.ipynb",
+      "cells": 63,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'data' is not defined"
+    },
+    {
+      "path": "Machine-Learning/Pipelines_in_scikit_learn.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'skfactor'"
+    },
+    {
+      "path": "Machine-Learning/Preprocessing_Create_new_Features_(Faker)_.ipynb",
+      "cells": 3,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'faker'"
+    },
+    {
+      "path": "Machine-Learning/Preprocessing_Creating_artificial_datasets.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 2,
+      "nondeterministic": 0
+    },
+    {
+      "path": "Machine-Learning/Preprocessing_Data_Processing_in_Python_.ipynb",
+      "cells": 57,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'google'"
+    },
+    {
+      "path": "Machine-Learning/Preprocessing_Data_representation_in_scikit_learn.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/Preprocessing_StandardScaler_in_Machine_Learning.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 3,
+      "nondeterministic": 0
+    },
+    {
+      "path": "Machine-Learning/Preprocessing_Upload_Dataset_from_github_to_Colab.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: '/tmp/Machine-Learning-master/Datasets/train.csv'"
+    },
+    {
+      "path": "Machine-Learning/Regression_With_Pycaret.ipynb",
+      "cells": 33,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/Scikit_Learn_Boosting_Methods.ipynb",
+      "cells": 3,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "TypeError: AdaBoostClassifier.__init__() got an unexpected keyword argument 'max_features'"
+    },
+    {
+      "path": "Machine-Learning/Simple_Linear_Regression_using_scikit_learn.ipynb",
+      "cells": 14,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'FuelConsumption.csv'"
+    },
+    {
+      "path": "Machine-Learning/Sklearn_Introduction_of_SKLEARN.ipynb",
+      "cells": 15,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'X_train' is not defined"
+    },
+    {
+      "path": "Machine-Learning/Statistics_Exploring_Correlation_10_14_21.ipynb",
+      "cells": 39,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/Statistics_for_Machine_Learning_.ipynb",
+      "cells": 43,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/Supervised_(Classification)_ML_Model_Training_and_Evulation_.ipynb",
+      "cells": 289,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "Machine-Learning/Unsupervised_learning.ipynb",
+      "cells": 107,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: '/content/drive/MyDrive/Datasets/Student field Recommendation /Placement_Data_Full_Class.csv'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechProcessing23S_assignment1_espnet-tutorial.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pytz'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechProcessing23S_assignment3_spk.ipynb",
+      "cells": 12,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechProcessing23S_assignment4_ssl.ipynb",
+      "cells": 23,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pytz'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechProcessing23S_assignment5_st.ipynb",
+      "cells": 13,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'espnet2'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechProcessing23S_assignment6_slu.ipynb",
+      "cells": 15,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'soundfile'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechProcessing23S_assignment7_se.ipynb",
+      "cells": 17,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'soundfile'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechProcessing23S_assignment8_tts.ipynb",
+      "cells": 17,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'espnet2'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechProcessing23S_s2st_demo.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'espnet2'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechRecognition21F_general_tutorial.ipynb",
+      "cells": 43,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'espnet_model_zoo'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechRecognition22F_new_task_tutorial.ipynb",
+      "cells": 13,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pytz'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechTechnology26S_neural_codec.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'espnet2'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechTechnology26S_speaker_verification.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'soundfile'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechTechnology26S_speech_enhancement.ipynb",
+      "cells": 17,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'soundfile'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechTechnology26S_speech_recognition.ipynb",
+      "cells": 15,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'torch.nn'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechTechnology26S_speech_translation.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'espnet2'"
+    },
+    {
+      "path": "notebook/Courses_CMUSpeechTechnology26S_text_to_speech.ipynb",
+      "cells": 18,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'nltk'"
+    },
+    {
+      "path": "notebook/Demos_asr_demo.ipynb",
+      "cells": 4,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'librosa'"
+    },
+    {
+      "path": "notebook/Demos_asr_streaming_demo.ipynb",
+      "cells": 4,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'soundfile'"
+    },
+    {
+      "path": "notebook/Demos_codec_demo.ipynb",
+      "cells": 4,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'librosa'"
+    },
+    {
+      "path": "notebook/Demos_enh_demo.ipynb",
+      "cells": 4,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'librosa'"
+    },
+    {
+      "path": "notebook/Demos_sds_demo.ipynb",
+      "cells": 5,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'librosa'"
+    },
+    {
+      "path": "notebook/Demos_spk_demo.ipynb",
+      "cells": 4,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'librosa'"
+    },
+    {
+      "path": "notebook/Demos_st_demo.ipynb",
+      "cells": 4,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'librosa'"
+    },
+    {
+      "path": "notebook/Demos_tts_demo.ipynb",
+      "cells": 3,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'espnet2'"
+    },
+    {
+      "path": "notebook/Demos_unmaintained_2pass_slu_demo.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'soundfile'"
+    },
+    {
+      "path": "notebook/Demos_unmaintained_asr_realtime_demo.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'espnet_model_zoo'"
+    },
+    {
+      "path": "notebook/Demos_unmaintained_asr_transfer_learning_demo.ipynb",
+      "cells": 13,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'yaml'"
+    },
+    {
+      "path": "notebook/Demos_unmaintained_onnx_conversion_demo.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'espnet_onnx'"
+    },
+    {
+      "path": "notebook/Demos_unmaintained_se_demo.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'soundfile'"
+    },
+    {
+      "path": "notebook/Demos_unmaintained_se_demo_for_waspaa_2021.ipynb",
+      "cells": 17,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'soundfile'"
+    },
+    {
+      "path": "notebook/Demos_unmaintained_streaming_asr_demo.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'espnet'"
+    },
+    {
+      "path": "notebook/Demos_unmaintained_tts_realtime_demo.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'espnet2'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/CPI_and_Fed_Funds_Rates.ipynb",
+      "cells": 53,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/CPI_Predictors.ipynb",
+      "cells": 25,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/Current_Riskfree_Rates.ipynb",
+      "cells": 36,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/Disposable_Income_and_Savings.ipynb",
+      "cells": 21,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/Fed_Public_Debt_and_Fed_Tax_Revenue.ipynb",
+      "cells": 35,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/Fed_Public_Debt_Holders.ipynb",
+      "cells": 34,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/GDP_Composition.ipynb",
+      "cells": 51,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/Interest_Rate_Spreads.ipynb",
+      "cells": 20,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/Labor_Productivity.ipynb",
+      "cells": 23,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/M2_PCE_and_CPI.ipynb",
+      "cells": 46,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/Money_Supply.ipynb",
+      "cells": 51,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/Quantitative_Easing_and_Tapering.ipynb",
+      "cells": 32,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/Stock_Market_FA.ipynb",
+      "cells": 52,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "US_Economic_Data_Analysis/Unemployment_and_Participation_Rates.ipynb",
+      "cells": 33,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    }
+  ]
+}

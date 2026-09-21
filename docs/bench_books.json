@@ -1,0 +1,2890 @@
+{
+  "root": "C:\\Users\\dell\\AppData\\Local\\Temp\\claude\\d--github\\9ecf52ac-9133-4b3a-8b8b-0b0e578e4abb\\scratchpad\\nbcorpus",
+  "seconds": 1932.3,
+  "attempted": 291,
+  "unrunnable": 204,
+  "decided": 87,
+  "faithful": 87,
+  "broken": 0,
+  "package_only_failed": 0,
+  "package_timed_out": 0,
+  "notebooks_with_nondeterminism": 22,
+  "nondeterministic_values_excluded": 80,
+  "fidelity": 1.0,
+  "notebook_error_kinds": [
+    [
+      "ModuleNotFoundError",
+      107
+    ],
+    [
+      "OSError",
+      29
+    ],
+    [
+      "NameError",
+      20
+    ],
+    [
+      "FileNotFoundError",
+      10
+    ],
+    [
+      "AttributeError",
+      9
+    ],
+    [
+      "TypeError",
+      9
+    ],
+    [
+      "ValueError",
+      8
+    ],
+    [
+      "timed out after 60s",
+      6
+    ],
+    [
+      "SystemExit",
+      2
+    ],
+    [
+      "ZeroDivisionError",
+      2
+    ],
+    [
+      "ImportError",
+      1
+    ],
+    [
+      "EOFError",
+      1
+    ]
+  ],
+  "failures": [],
+  "notebooks": [
+    {
+      "path": "cookbook-2nd-code/chapter01_basic_01_notebook.ipynb",
+      "cells": 12,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name '_' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter01_basic_02_pandas.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "AttributeError: 'DatetimeIndex' object has no attribute 'weekday_name'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter01_basic_03_numpy.ipynb",
+      "cells": 17,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 1,
+      "nondeterministic": 8
+    },
+    {
+      "path": "cookbook-2nd-code/chapter01_basic_04_magic.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter01_basic_05_config.ipynb",
+      "cells": 8,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'traitlets'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter01_basic_06_kernel.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'ipykernel'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter02_best_practices_01_py3.ipynb",
+      "cells": 33,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name '_' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter02_best_practices_01_shell.ipynb",
+      "cells": 20,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'pwd' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter02_best_practices_02_py3.ipynb",
+      "cells": 33,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name '_' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter02_best_practices_03_git.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'pwd' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter02_best_practices_04_git_advanced.ipynb",
+      "cells": 24,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'pwd' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter02_best_practices_06_high_quality.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter02_best_practices_07_high_quality.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter02_best_practices_07_test.ipynb",
+      "cells": 8,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter02_best_practices_08_debugging.ipynb",
+      "cells": 3,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "SystemExit: 1"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter02_best_practices_08_test.ipynb",
+      "cells": 8,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter02_best_practices_09_debugging.ipynb",
+      "cells": 3,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "SystemExit: 1"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter03_notebook_01_blocks.ipynb",
+      "cells": 8,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter03_notebook_02_nbformat.ipynb",
+      "cells": 15,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'requests'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter03_notebook_03_widgets.ipynb",
+      "cells": 15,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'ipywidgets'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter03_notebook_04_custom_widgets.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'ipywidgets'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter03_notebook_05_custom_notebook.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'notebook'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter04_optimization_01_timeit.ipynb",
+      "cells": 5,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 's' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter04_optimization_02_profile.ipynb",
+      "cells": 4,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'prun0'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter04_optimization_03_linebyline.ipynb",
+      "cells": 5,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'simulation'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter04_optimization_04_memprof.ipynb",
+      "cells": 5,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'memscript'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter04_optimization_05_array_copies.ipynb",
+      "cells": 28,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 7,
+      "nondeterministic": 2
+    },
+    {
+      "path": "cookbook-2nd-code/chapter04_optimization_06_stride_tricks.ipynb",
+      "cells": 10,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 5,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter04_optimization_07_rolling_average.ipynb",
+      "cells": 20,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 8,
+      "nondeterministic": 4
+    },
+    {
+      "path": "cookbook-2nd-code/chapter04_optimization_08_memmap.ipynb",
+      "cells": 9,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 3,
+      "nondeterministic": 1
+    },
+    {
+      "path": "cookbook-2nd-code/chapter04_optimization_09_hdf5_array.ipynb",
+      "cells": 12,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'h5py'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_01_slow.ipynb",
+      "cells": 30,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 2
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_02_numba.ipynb",
+      "cells": 13,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'numba'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_03_numexpr.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'numexpr'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_04_ctypes.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: Could not find module 'mandelbrot.so' (or one of its dependencies). Try using the full path with constructor syntax."
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_05_cython.ipynb",
+      "cells": 8,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'm' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_06_ray.ipynb",
+      "cells": 10,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 16,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_06_ray_06_ray_1.ipynb",
+      "cells": 4,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 16,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_06_ray_06_ray_2.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'run' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_06_ray_06_ray_3.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'run' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_06_ray_06_ray_4.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'run' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_06_ray_06_ray_5.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'run' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_06_ray_06_ray_6.ipynb",
+      "cells": 7,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'run' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_06_ray_06_ray_7.ipynb",
+      "cells": 7,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'run' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_07_openmp.ipynb",
+      "cells": 2,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'cython'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_08_cuda.ipynb",
+      "cells": 14,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'numba'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_09_ipyparallel.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'ipyparallel'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_10_async.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'ipyparallel'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_11_dask.ipynb",
+      "cells": 25,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'dask'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter05_hpc_12_julia.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'println' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter06_viz_01_styles.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'matplotlib' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter06_viz_02_seaborn.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter06_viz_03_bokeh.ipynb",
+      "cells": 12,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'bokeh'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter06_viz_04_d3.ipynb",
+      "cells": 5,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'networkx'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter06_viz_05_widgets.ipynb",
+      "cells": 15,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'ipyleaflet'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter06_viz_06_altair.ipynb",
+      "cells": 7,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'altair'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter07_stats_01_pandas.ipynb",
+      "cells": 12,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "AttributeError: 'Axes' object has no attribute 'plot_date'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter07_stats_02_z_test.ipynb",
+      "cells": 4,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 6,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter07_stats_03_bayesian.ipynb",
+      "cells": 4,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 6,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter07_stats_04_correlation.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name '_' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter07_stats_05_mlfit.ipynb",
+      "cells": 13,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 16,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter07_stats_06_kde.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'cartopy'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter07_stats_07_pymc.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pymc3'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter07_stats_08_r.ipynb",
+      "cells": 10,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 5,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter08_ml_01_scikit.ipynb",
+      "cells": 9,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 10,
+      "nondeterministic": 4
+    },
+    {
+      "path": "cookbook-2nd-code/chapter08_ml_02_titanic.ipynb",
+      "cells": 14,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 20,
+      "nondeterministic": 5
+    },
+    {
+      "path": "cookbook-2nd-code/chapter08_ml_03_digits.ipynb",
+      "cells": 10,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 13,
+      "nondeterministic": 4
+    },
+    {
+      "path": "cookbook-2nd-code/chapter08_ml_04_text.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "timed out after 60s"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter08_ml_05_svm.ipynb",
+      "cells": 7,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 4,
+      "nondeterministic": 2
+    },
+    {
+      "path": "cookbook-2nd-code/chapter08_ml_06_random_forest.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ImportError: \n`load_boston` has been removed from scikit-learn since version 1.2.\n\nThe Boston housing prices dataset has an ethical problem: as\ninvestigated in [1], the authors of this dataset engineered a\nnon-invertible variable \"B\" assuming that racial self-segregation had a\npositive impact on house prices [2]"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter08_ml_07_pca.ipynb",
+      "cells": 6,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 7,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter08_ml_08_clustering.ipynb",
+      "cells": 7,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 5,
+      "nondeterministic": 3
+    },
+    {
+      "path": "cookbook-2nd-code/chapter09_numoptim_01_root.ipynb",
+      "cells": 7,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name '_' is not defined"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter09_numoptim_02_minimize.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ValueError: 0 is not a valid value for origin. Supported values are 'upper', 'lower'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter09_numoptim_03_curvefitting.ipynb",
+      "cells": 8,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 4,
+      "nondeterministic": 12
+    },
+    {
+      "path": "cookbook-2nd-code/chapter09_numoptim_04_energy.ipynb",
+      "cells": 14,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 16,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter10_signal_01_fourier.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "timed out after 60s"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter10_signal_02_filter.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "timed out after 60s"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter10_signal_03_autocorrelation.ipynb",
+      "cells": 13,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'requests'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter11_image_01_exposure.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'skimage'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter11_image_02_filters.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'skimage'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter11_image_03_segmentation.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'skimage'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter11_image_04_interest.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'skimage'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter11_image_05_faces.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'requests'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter11_image_06_speech.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'requests'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter11_image_07_synth.ipynb",
+      "cells": 6,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter12_deterministic_01_bifurcation.ipynb",
+      "cells": 9,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 11,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter12_deterministic_02_cellular.ipynb",
+      "cells": 5,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 6,
+      "nondeterministic": 1
+    },
+    {
+      "path": "cookbook-2nd-code/chapter12_deterministic_03_ode.ipynb",
+      "cells": 5,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 8,
+      "nondeterministic": 0
+    },
+    {
+      "path": "cookbook-2nd-code/chapter12_deterministic_04_turing.ipynb",
+      "cells": 9,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 14,
+      "nondeterministic": 7
+    },
+    {
+      "path": "cookbook-2nd-code/chapter13_stochastic_01_markov.ipynb",
+      "cells": 9,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 14,
+      "nondeterministic": 1
+    },
+    {
+      "path": "cookbook-2nd-code/chapter13_stochastic_02_poisson.ipynb",
+      "cells": 10,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 5,
+      "nondeterministic": 2
+    },
+    {
+      "path": "cookbook-2nd-code/chapter13_stochastic_03_brownian.ipynb",
+      "cells": 5,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 4,
+      "nondeterministic": 4
+    },
+    {
+      "path": "cookbook-2nd-code/chapter13_stochastic_04_sde.ipynb",
+      "cells": 9,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 15,
+      "nondeterministic": 3
+    },
+    {
+      "path": "cookbook-2nd-code/chapter14_graphgeo_01_networkx.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'networkx'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter14_graphgeo_02_airports.ipynb",
+      "cells": 17,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'networkx'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter14_graphgeo_03_dag.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'requests'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter14_graphgeo_04_connected.ipynb",
+      "cells": 14,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'networkx'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter14_graphgeo_05_voronoi.ipynb",
+      "cells": 15,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'smopy'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter14_graphgeo_06_gis.ipynb",
+      "cells": 8,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'requests'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter14_graphgeo_07_gps.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'requests'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter15_symbolic_01_sympy_intro.ipynb",
+      "cells": 12,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'sympy'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter15_symbolic_02_solvers.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'sympy'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter15_symbolic_03_function.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'sympy'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter15_symbolic_04_stats.ipynb",
+      "cells": 13,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'sympy'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter15_symbolic_05_number_theory.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'sympy'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter15_symbolic_06_logic.ipynb",
+      "cells": 7,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'sympy'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter15_symbolic_07_lotka.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'sympy'"
+    },
+    {
+      "path": "cookbook-2nd-code/chapter15_symbolic_08_sage.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'sin' is not defined"
+    },
+    {
+      "path": "pandas_exercises/01_Getting_&_Knowing_Your_Data_Chipotle_Exercise_with_Solutions.ipynb",
+      "cells": 20,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "TypeError: Cannot perform reduction 'mean' with string dtype"
+    },
+    {
+      "path": "pandas_exercises/01_Getting_&_Knowing_Your_Data_Chipotle_Exercises.ipynb",
+      "cells": 4,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/01_Getting_&_Knowing_Your_Data_Chipotle_Solutions.ipynb",
+      "cells": 4,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/01_Getting_&_Knowing_Your_Data_Occupation_Exercise_with_Solution.ipynb",
+      "cells": 17,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 1,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/01_Getting_&_Knowing_Your_Data_Occupation_Solutions.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/01_Getting_&_Knowing_Your_Data_World_Food_Facts_Exercises_with_solutions.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\dell/Desktop/en.openfoodfacts.org.products.tsv'"
+    },
+    {
+      "path": "pandas_exercises/02_Filtering_&_Sorting_Chipotle_Exercises_with_solutions.ipynb",
+      "cells": 13,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 3,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/02_Filtering_&_Sorting_Chipotle_Solutions.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/02_Filtering_&_Sorting_Euro12_Exercises_with_Solutions.ipynb",
+      "cells": 13,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 2,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/02_Filtering_&_Sorting_Fictional_Army_Exercise.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 1,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/02_Filtering_&_Sorting_Fictional_Army_Exercise_with_solutions.ipynb",
+      "cells": 18,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 2,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/02_Filtering_&_Sorting_Fictional_Army_Solutions.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 1,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/03_Grouping_Alcohol_Consumption_Exercise_with_solutions.ipynb",
+      "cells": 7,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 1,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/03_Grouping_Occupation_Exercises_with_solutions.ipynb",
+      "cells": 7,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 5,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/03_Grouping_Regiment_Exercises.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 1,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/03_Grouping_Regiment_Exercises_solutions.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "TypeError: dtype 'str' does not support operation 'mean'"
+    },
+    {
+      "path": "pandas_exercises/03_Grouping_Regiment_Solutions.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 1,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/04_Apply_Students_Alcohol_Consumption_Exercises_with_solutions.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "AttributeError: 'DataFrame' object has no attribute 'applymap'"
+    },
+    {
+      "path": "pandas_exercises/04_Apply_US_Crime_Rates_Exercises_with_solutions.ipynb",
+      "cells": 8,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ValueError: Invalid frequency: 10AS. Failed to parse with error message: ValueError(\"Invalid frequency: AS. Failed to parse with error message: KeyError('AS'). Did you mean YS?\")"
+    },
+    {
+      "path": "pandas_exercises/05_Merge_Auto_MPG_Exercises_with_solutions.ipynb",
+      "cells": 7,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "AttributeError: 'DataFrame' object has no attribute 'append'"
+    },
+    {
+      "path": "pandas_exercises/05_Merge_Auto_MPG_Solutions.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/05_Merge_Fictitous_Names_Exercises.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 3,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/05_Merge_Fictitous_Names_Exercises_with_solutions.ipynb",
+      "cells": 9,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 8,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/05_Merge_Fictitous_Names_Solutions.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 3,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/05_Merge_Housing_Market_Exercises_with_solutions.ipynb",
+      "cells": 7,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 5
+    },
+    {
+      "path": "pandas_exercises/05_Merge_Housing_Market_Solutions.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/06_Stats_US_Baby_Names_Exercises_with_solutions.ipynb",
+      "cells": 13,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "timed out after 60s"
+    },
+    {
+      "path": "pandas_exercises/06_Stats_Wind_Stats_Exercises.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/06_Stats_Wind_Stats_Exercises_with_solutions.ipynb",
+      "cells": 15,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "TypeError: list indices must be integers or slices, not list"
+    },
+    {
+      "path": "pandas_exercises/06_Stats_Wind_Stats_Solutions.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/07_Visualization_Chipotle_Exercise_with_Solutions.ipynb",
+      "cells": 5,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 6,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/07_Visualization_Chipotle_Exercises.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/07_Visualization_Chipotle_Solutions.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/07_Visualization_Online_Retail_Exercises_with_solutions_code.ipynb",
+      "cells": 17,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "pandas_exercises/07_Visualization_Scores_Exercises_with_solutions_code.ipynb",
+      "cells": 4,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 2,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/07_Visualization_Scores_Solutions.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/07_Visualization_Tips_Exercises_with_code_and_solutions.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "NameError: name 'pd' is not defined"
+    },
+    {
+      "path": "pandas_exercises/07_Visualization_Tips_Solutions.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/07_Visualization_Titanic_Disaster_Exercises_code_with_solutions.ipynb",
+      "cells": 7,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "pandas_exercises/07_Visualization_Titanic_Disaster_Solutions.ipynb",
+      "cells": 1,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "pandas_exercises/08_Creating_Series_and_DataFrames_Pokemon_Exercises-with-solutions-and-code.ipynb",
+      "cells": 6,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 2,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/09_Time_Series_Apple_Stock_Exercises-with-solutions-code.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ValueError: Invalid frequency: BM. Failed to parse with error message: ValueError(\"'BM' is no longer supported for offsets. Please use 'BME' instead.\")"
+    },
+    {
+      "path": "pandas_exercises/09_Time_Series_Apple_Stock_Solutions.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/09_Time_Series_Getting_Financial_Data_Exercises_solutions.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "pandas_exercises/09_Time_Series_Getting_Financial_Data_Exercises_with_solutions_and_code.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "pandas_exercises/09_Time_Series_Getting_Financial_Data_Solutions.ipynb",
+      "cells": 1,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'pandas_datareader'"
+    },
+    {
+      "path": "pandas_exercises/09_Time_Series_Investor_Flow_of_Funds_US_Exercises_with_code_and_solutions.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ValueError: Invalid frequency: M. Failed to parse with error message: ValueError(\"'M' is no longer supported for offsets. Please use 'ME' instead.\")"
+    },
+    {
+      "path": "pandas_exercises/09_Time_Series_Investor_Flow_of_Funds_US_Solutions.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/10_Deleting_Iris_Exercises.ipynb",
+      "cells": 1,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/10_Deleting_Iris_Exercises_with_solutions_and_code.ipynb",
+      "cells": 10,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 2,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/10_Deleting_Iris_Solutions.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "pandas_exercises/10_Deleting_Wine_Exercises_code_and_solutions.ipynb",
+      "cells": 15,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 3,
+      "nondeterministic": 1
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch02_ch02.ipynb",
+      "cells": 26,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch03_ch03.ipynb",
+      "cells": 45,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch04_ch04.ipynb",
+      "cells": 56,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch05_ch05.ipynb",
+      "cells": 52,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch06_ch06.ipynb",
+      "cells": 38,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch07_ch07.ipynb",
+      "cells": 38,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch08_ch08.ipynb",
+      "cells": 51,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "EOFError: Compressed file ended before the end-of-stream marker was reached"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch09_ch09.ipynb",
+      "cells": 41,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch10_ch10.ipynb",
+      "cells": 49,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch11_ch11.ipynb",
+      "cells": 26,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch12_ch12.ipynb",
+      "cells": 29,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch13_ch13_part1.ipynb",
+      "cells": 60,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch13_ch13_part2.ipynb",
+      "cells": 42,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'tensorflow'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch13_ch13_part3.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'torch.nn'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch14_ch14_part1.ipynb",
+      "cells": 42,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch14_ch14_part2.ipynb",
+      "cells": 20,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'tensorflow'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch14_ch14_part3.ipynb",
+      "cells": 14,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'tensorflow'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch15_ch15_part1.ipynb",
+      "cells": 39,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch15_ch15_part2.ipynb",
+      "cells": 28,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'tensorflow'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch15_downloading-celeba_downloading-celeba.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'torchvision'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch16_ch16_part1.ipynb",
+      "cells": 46,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch16_ch16_part2.ipynb",
+      "cells": 24,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "python-machine-learning-book-3rd-edition/ch17_ch17_part2.ipynb",
+      "cells": 23,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_01.06-Errors-and-Debugging.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ZeroDivisionError: division by zero"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_01.07-Timing-and-Profiling.ipynb",
+      "cells": 14,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'mprun_demo'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_02.00-Introduction-to-NumPy.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_02.01-Understanding-Data-Types.ipynb",
+      "cells": 21,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 4,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_02.02-The-Basics-Of-NumPy-Arrays.ipynb",
+      "cells": 51,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 14,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_02.03-Computation-on-arrays-ufuncs.ipynb",
+      "cells": 30,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 6,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_02.04-Computation-on-arrays-aggregates.ipynb",
+      "cells": 18,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'data/president_heights.csv'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_02.05-Computation-on-arrays-broadcasting.ipynb",
+      "cells": 23,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ValueError: operands could not be broadcast together with shapes (3,2) (3,) "
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_02.06-Boolean-Arrays-and-Masks.ipynb",
+      "cells": 40,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'vega_datasets'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_02.07-Fancy-Indexing.ipynb",
+      "cells": 26,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_02.08-Sorting.ipynb",
+      "cells": 22,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_02.09-Structured-Data-NumPy.ipynb",
+      "cells": 17,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 8,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.00-Introduction-to-Pandas.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.01-Introducing-Pandas-Objects.ipynb",
+      "cells": 38,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "TypeError: Index does not support mutable operations"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.02-Data-Indexing-and-Selection.ipynb",
+      "cells": 33,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 3,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.03-Operations-in-Pandas.ipynb",
+      "cells": 20,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 8,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.04-Missing-Values.ipynb",
+      "cells": 30,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.05-Hierarchical-Indexing.ipynb",
+      "cells": 42,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 8,
+      "nondeterministic": 3
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.06-Concat-And-Append.ipynb",
+      "cells": 16,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 11,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.07-Merge-and-Join.ipynb",
+      "cells": 33,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'data/state-population.csv'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.08-Aggregation-and-Grouping.ipynb",
+      "cells": 30,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.09-Pivot-Tables.ipynb",
+      "cells": 22,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.10-Working-With-Strings.ipynb",
+      "cells": 27,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: File data/recipeitems.json does not exist"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.11-Working-with-Time-Series.ipynb",
+      "cells": 43,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ValueError: Invalid frequency: H. Failed to parse with error message: ValueError(\"Invalid frequency: H. Failed to parse with error message: KeyError('H'). Did you mean h?\") Did you mean h?"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_03.12-Performance-Eval-and-Query.ipynb",
+      "cells": 28,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'numexpr'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.00-Introduction-To-Matplotlib.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.01-Simple-Line-Plots.ipynb",
+      "cells": 15,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.02-Simple-Scatter-Plots.ipynb",
+      "cells": 8,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.03-Errorbars.ipynb",
+      "cells": 5,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.04-Density-and-Contour-Plots.ipynb",
+      "cells": 8,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-white' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.05-Histograms-and-Binnings.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-white' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.06-Customizing-Legends.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.07-Customizing-Colorbars.ipynb",
+      "cells": 13,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-white' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.08-Multiple-Subplots.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-white' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.09-Text-and-Annotation.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.10-Customizing-Ticks.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "timed out after 60s"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.11-Settings-and-Stylesheets.ipynb",
+      "cells": 15,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.12-Three-Dimensional-Plotting.ipynb",
+      "cells": 17,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 16,
+      "nondeterministic": 3
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_04.14-Visualization-With-Seaborn.ipynb",
+      "cells": 31,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.02-Introducing-Scikit-Learn.ipynb",
+      "cells": 32,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.03-Hyperparameters-and-Model-Validation.ipynb",
+      "cells": 21,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.04-Feature-Engineering.ipynb",
+      "cells": 18,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 12,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.05-Naive-Bayes.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.06-Linear-Regression.ipynb",
+      "cells": 28,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.07-Support-Vector-Machines.ipynb",
+      "cells": 26,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.08-Random-Forests.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.09-Principal-Component-Analysis.ipynb",
+      "cells": 23,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.10-Manifold-Learning.ipynb",
+      "cells": 25,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.11-K-Means.ipynb",
+      "cells": 24,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.12-Gaussian-Mixtures.ipynb",
+      "cells": 24,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.13-Kernel-Density-Estimation.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_05.14-Image-Features.ipynb",
+      "cells": 17,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_06.00-Figure-Code.ipynb",
+      "cells": 47,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_01.06-Errors-and-Debugging.ipynb",
+      "cells": 9,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ZeroDivisionError: division by zero"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_01.07-Timing-and-Profiling.ipynb",
+      "cells": 14,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'mprun_demo'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_02.00-Introduction-to-NumPy.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_02.01-Understanding-Data-Types.ipynb",
+      "cells": 21,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 4,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_02.02-The-Basics-Of-NumPy-Arrays.ipynb",
+      "cells": 53,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 13,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_02.03-Computation-on-arrays-ufuncs.ipynb",
+      "cells": 30,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 5,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_02.04-Computation-on-arrays-aggregates.ipynb",
+      "cells": 18,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'data/president_heights.csv'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_02.05-Computation-on-arrays-broadcasting.ipynb",
+      "cells": 23,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ValueError: operands could not be broadcast together with shapes (3,2) (3,) "
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_02.06-Boolean-Arrays-and-Masks.ipynb",
+      "cells": 40,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'data/Seattle2014.csv'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_02.07-Fancy-Indexing.ipynb",
+      "cells": 26,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_02.08-Sorting.ipynb",
+      "cells": 23,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_02.09-Structured-Data-NumPy.ipynb",
+      "cells": 17,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 8,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.00-Introduction-to-Pandas.ipynb",
+      "cells": 2,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 0,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.01-Introducing-Pandas-Objects.ipynb",
+      "cells": 38,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "TypeError: Index does not support mutable operations"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.02-Data-Indexing-and-Selection.ipynb",
+      "cells": 35,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "AttributeError: 'DataFrame' object has no attribute 'ix'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.03-Operations-in-Pandas.ipynb",
+      "cells": 20,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "TypeError: unsupported operand type(s) for |: 'StringArray' and 'StringArray'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.04-Missing-Values.ipynb",
+      "cells": 28,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "TypeError: unsupported operand type(s) for +: 'int' and 'NoneType'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.05-Hierarchical-Indexing.ipynb",
+      "cells": 45,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "TypeError: MultiIndex.__new__() got an unexpected keyword argument 'labels'. Did you mean 'levels'?"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.06-Concat-And-Append.ipynb",
+      "cells": 16,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 11,
+      "nondeterministic": 0
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.07-Merge-and-Join.ipynb",
+      "cells": 33,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'data/state-population.csv'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.08-Aggregation-and-Grouping.ipynb",
+      "cells": 30,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.09-Pivot-Tables.ipynb",
+      "cells": 22,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.10-Working-With-Strings.ipynb",
+      "cells": 31,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "AttributeError: 'NoneType' object has no attribute 'capitalize'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.11-Working-with-Time-Series.ipynb",
+      "cells": 46,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ValueError: Invalid frequency: H. Failed to parse with error message: ValueError(\"Invalid frequency: H. Failed to parse with error message: KeyError('H'). Did you mean h?\") Did you mean h?"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_03.12-Performance-Eval-and-Query.ipynb",
+      "cells": 28,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'numexpr'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.00-Introduction-To-Matplotlib.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'IPython'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.01-Simple-Line-Plots.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.02-Simple-Scatter-Plots.ipynb",
+      "cells": 8,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.03-Errorbars.ipynb",
+      "cells": 5,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.04-Density-and-Contour-Plots.ipynb",
+      "cells": 8,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-white' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.05-Histograms-and-Binnings.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-white' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.06-Customizing-Legends.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'data/california_cities.csv'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.07-Customizing-Colorbars.ipynb",
+      "cells": 14,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "AttributeError: module 'matplotlib.cm' has no attribute 'get_cmap'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.08-Multiple-Subplots.ipynb",
+      "cells": 10,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-white' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.09-Text-and-Annotation.ipynb",
+      "cells": 8,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "OSError: 'seaborn-whitegrid' is not a valid package style, path of style file, URL of style file, or library style name (library styles are listed in `style.available`)"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.10-Customizing-Ticks.ipynb",
+      "cells": 11,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "timed out after 60s"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.11-Settings-and-Stylesheets.ipynb",
+      "cells": 17,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "AttributeError: Axes.set() got an unexpected keyword argument 'axisbg'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.12-Three-Dimensional-Plotting.ipynb",
+      "cells": 17,
+      "notebook_ran": true,
+      "package_ran": true,
+      "faithful": true,
+      "compared": 16,
+      "nondeterministic": 3
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.13-Geographic-Data-With-Basemap.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'mpl_toolkits.basemap'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_04.14-Visualization-With-Seaborn.ipynb",
+      "cells": 38,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.02-Introducing-Scikit-Learn.ipynb",
+      "cells": 32,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.03-Hyperparameters-and-Model-Validation.ipynb",
+      "cells": 21,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'sklearn.cross_validation'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.04-Feature-Engineering.ipynb",
+      "cells": 18,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "AttributeError: 'DictVectorizer' object has no attribute 'get_feature_names'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.05-Naive-Bayes.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.06-Linear-Regression.ipynb",
+      "cells": 27,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.07-Support-Vector-Machines.ipynb",
+      "cells": 26,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.08-Random-Forests.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.09-Principal-Component-Analysis.ipynb",
+      "cells": 22,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.10-Manifold-Learning.ipynb",
+      "cells": 25,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.11-K-Means.ipynb",
+      "cells": 24,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.12-Gaussian-Mixtures.ipynb",
+      "cells": 24,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.13-Kernel-Density-Estimation.ipynb",
+      "cells": 19,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_05.14-Image-Features.ipynb",
+      "cells": 16,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    },
+    {
+      "path": "PythonDataScienceHandbook/notebooks_v1_06.00-Figure-Code.ipynb",
+      "cells": 47,
+      "notebook_ran": false,
+      "package_ran": false,
+      "faithful": null,
+      "compared": 0,
+      "nondeterministic": 0,
+      "notebook_error": "ModuleNotFoundError: No module named 'seaborn'"
+    }
+  ]
+}

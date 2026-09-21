@@ -1,0 +1,47 @@
+==========================================================================
+NOTEBOOK SURVEY - C:\Users\dell\AppData\Local\Temp\claude\d--github\9ecf52ac-9133-4b3a-8b8b-0b0e578e4abb\scratchpad\nbcorpus
+==========================================================================
+359 notebooks found
+  1 unreadable JSON, excluded
+  67 no code cells, excluded
+291 analysed, 4611 code cells
+
+Of the notebooks analysed:
+    260    89%  provably run top to bottom in a fresh kernel
+     30    10%  use a name that is never defined anywhere
+      4     1%  use a name before the cell that defines it
+     17     6%  were last run out of document order
+      4     1%  contain a cell that was never run
+    204    70%  contain IPython magics or shell escapes
+      8     3%  star-import, so the question is undecidable
+     47    16%  contain a cell that does not parse
+
+Most common magics:
+    169  %matplotlib
+     98  %timeit
+     38  %load_ext
+     27  %%writefile
+     21  %watermark
+     16  !shell
+     12  %%timeit
+      9  %%cython
+
+Most undefined names:
+   16  cookbook-2nd-code/chapter15_symbolic_02_solvers.ipynb
+       Matrix, S, Symbol, a, b, c, d, det
+   16  cookbook-2nd-code/chapter15_symbolic_04_stats.ipynb
+       Die, E, Eq, Integral, Normal, P, density, init_printing
+   10  cookbook-2nd-code/chapter06_viz_05_widgets.ipynb
+       AmbientLight, DirectionalLight, LambertMaterial, Mesh, OrbitControls, ParametricGeometry, PerspectiveCamera, Renderer
+   10  cookbook-2nd-code/chapter15_symbolic_03_function.ipynb
+       diff, fourier_transform, init_printing, integrate, limit, oo, series, var
+   10  cookbook-2nd-code/chapter15_symbolic_07_lotka.ipynb
+       Matrix, a, b, c, d, init_printing, solve, var
+    7  cookbook-2nd-code/chapter15_symbolic_01_sympy_intro.ipynb
+       S, init_printing, lambdify, pi, simplify, symbols, var
+    6  cookbook-2nd-code/chapter05_hpc_12_julia.ipynb
+       end, f, imshow, m, np, println
+    6  cookbook-2nd-code/chapter15_symbolic_06_logic.ipynb
+       SOPform, init_printing, var, x, y, z
+
+wrote docs\survey_books.json

@@ -1,0 +1,47 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "notebook-to-package"
+version = "0.1.0"
+description = "Turn a Jupyter notebook into an installable package, and prove the conversion kept its behaviour"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "hammasbuilds" }]
+keywords = ["jupyter", "notebook", "ipynb", "refactoring", "packaging", "reproducibility", "hidden state"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Code Generators",
+]
+# No runtime dependencies. A .ipynb is JSON, so `json` reads it and `ast` understands the
+# code; nbformat and jupyter_client are not needed to do either.
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.6"]
+
+[project.scripts]
+notebook-to-package = "notebook_to_package.cli:main"
+ntp = "notebook_to_package.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/hammasbuilds/notebook-to-package"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/notebook_to_package"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
