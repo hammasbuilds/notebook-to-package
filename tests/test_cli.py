@@ -104,3 +104,30 @@ def test_an_unreadable_notebook_is_refused(tmp_path, capsys):
     p.write_text("{not json", encoding="utf-8")
     assert main(["audit", str(p)]) == 1
     assert "could not read" in capsys.readouterr().err
+
+
+def test_audit_given_a_directory_says_so(tmp_path, capsys):
+    """`audit` takes a notebook and `survey` takes a directory, which is easy
+    to get the wrong way round.
+
+    Passing a directory to open() raises PermissionError on Windows and
+    IsADirectoryError on POSIX, and the old handler printed either verbatim -
+    so the user was told they lacked permission to read a directory they had
+    just created themselves. The message now names the mistake and the command
+    that does what they meant.
+    """
+    from notebook_to_package.cli import main
+
+    assert main(["audit", str(tmp_path)]) != 0
+    err = capsys.readouterr().err
+    assert "is a directory" in err
+    assert "survey" in err
+
+
+def test_audit_given_a_missing_path_says_so(tmp_path, capsys):
+    """Already handled upstream - pinned so the directory case above is not
+    mistaken for covering this one too."""
+    from notebook_to_package.cli import main
+
+    assert main(["audit", str(tmp_path / "nope.ipynb")]) != 0
+    assert "no such file" in capsys.readouterr().err.lower()

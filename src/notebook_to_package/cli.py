@@ -21,6 +21,19 @@ def _say(msg: str) -> None:
 
 
 def _load(path: Path):
+    # `audit` takes one notebook and `survey` takes a directory, which is easy
+    # to get the wrong way round. Handing a directory to open() raises
+    # PermissionError on Windows and IsADirectoryError on POSIX, and the old
+    # message passed either through verbatim - so the user was told they lacked
+    # permission to read a directory they had just created.
+    if path.is_dir():
+        print(
+            f"{path} is a directory. `audit` takes one notebook; "
+            f"use `survey {path}` to look at a directory of them.",
+            file=sys.stderr,
+        )
+        return None
+
     nb = nb_mod.read(path)
     if nb.unreadable:
         print(f"could not read {path}: {nb.unreadable}", file=sys.stderr)
