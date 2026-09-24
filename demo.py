@@ -38,7 +38,7 @@ CELLS = [
     # raises NameError; the notebook "works" only because it was run out of
     # order.
     ("summary = frame.describe()\n", 4),
-    ("print('loading...')\n", 2),          # a top-level side effect
+    ("print('loading...')\n", 2),  # a top-level side effect
     ("frame = pd.DataFrame({'a': [1, 2, 3]})\n", 3),
     ("def clean(df):\n    return df.dropna()\n", 5),
 ]
@@ -79,8 +79,7 @@ def main() -> int:
         print("A notebook with three faults planted in it:", flush=True)
         print("  * cells stored in an order they were never run in", flush=True)
         print("  * `summary` uses `frame`, which is defined two cells later", flush=True)
-        print("  * a bare print() at top level, which becomes an import-time effect",
-              flush=True)
+        print("  * a bare print() at top level, which becomes an import-time effect", flush=True)
         print(flush=True)
         print(f"  written to {notebook}", flush=True)
         print(flush=True)
@@ -88,7 +87,9 @@ def main() -> int:
         env = {**os.environ, "PYTHONPATH": str(ROOT / "src"), "PYTHONIOENCODING": "utf-8"}
         result = subprocess.run(
             [sys.executable, "-m", "notebook_to_package.cli", "audit", str(notebook)],
-            cwd=ROOT, env=env, check=False,
+            cwd=ROOT,
+            env=env,
+            check=False,
         )
         if result.returncode not in (0, 1):
             return result.returncode
