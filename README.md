@@ -2,13 +2,12 @@
 <p align="center"><i>A notebook is a transcript of a session, not a program. This turns one into a package and proves it still does the same thing.</i></p>
 
 <p align="center">
-  <a href="#the-through-line">The through-line</a> &middot;
-  <a href="#the-result">The result</a> &middot;
+  <a href="#what-it-does">What it does</a> &middot;
+  <a href="#results">Results</a> &middot;
   <a href="docs/RESULTS.md">Full results</a> &middot;
   <a href="#how-it-works">How it works</a> &middot;
   <a href="#run-it">Run it</a> &middot;
-  <a href="#what-this-does-not-do">What it does NOT do</a> &middot;
-  <a href="#problems-hit-while-building-this">Problems hit</a>
+  <a href="#scope">Scope</a> 
 </p>
 
 <p align="center">
@@ -22,7 +21,7 @@
 
 ---
 
-## The through-line
+## What it does
 
 ```mermaid
 flowchart LR
@@ -57,7 +56,7 @@ Move `df = load()` into `main()` without a `global` and the module still imports
 `summarise()` raises `NameError` the first time anybody calls it. **Nothing short of running
 both sides finds that**, so both sides are run and their resulting values compared.
 
-## The result
+## Results
 
 Two corpora, because the first one flattered everybody. **books** are notebooks published as
 books and courses, proofread to be read in order. **wild** are notebooks from ten ordinary
@@ -166,7 +165,7 @@ src/notebook_to_package/
   bench.py     convert and verify a corpus, with an honest denominator
 ```
 
-## What this does NOT do
+## Scope
 
 - **It cannot judge a notebook it cannot run.** 204 of 291 were excluded, and on ordinary
   repositories 102 of 106. The static audit is the part that works on those.
@@ -188,33 +187,6 @@ src/notebook_to_package/
 - **Both corpora are convenience samples.** Four published books and ten repositories from
   one GitHub search. The books/wild gap is large enough to be worth reporting; its exact size
   is not.
-
-## Problems hit while building this
-
-- **Four conversion failures that were not.** Every one was a notebook calling `np.random`
-  with no seed, so its values differ between any two runs of itself. The fix is a control
-  run — execute the notebook twice and discard every name that differs from itself — which
-  costs a third execution and is the difference between a measurement and an accusation.
-- **`%matplotlib inline` made the whole cell unparseable**, and that cell is usually the one
-  holding the imports. Every module it imported then read as *never defined*. On a corpus
-  that turns the headline number into noise. Magic lines are stripped before parsing.
-- **A function reading a global defined in a later cell was flagged as broken.** It is not:
-  a function body is not evaluated until it is called, and "helper early, config later" is
-  ordinary notebook style. Free names inside functions are checked for *existing*, not for
-  ordering — while a class body, which does run immediately, is checked for both.
-- **The fidelity check compared against the wrong dictionary.** `runpy.run_path` returns a
-  copy of the globals taken when the module finished executing — *before* `main()` is called
-  — so every value the conversion computed landed in the real module and none in that copy.
-  It reported every notebook as unfaithful, with every name "only in the notebook".
-- **One notebook hung a corpus run for 25 minutes on a 45-second timeout.** matplotlib's
-  default backend opens a window and `plt.show()` blocks forever; killing the interpreter
-  does not help, because the GUI thread holds the output pipe open and the parent waits in
-  `communicate()` for an EOF that never comes. Fixed with `MPLBACKEND=Agg`,
-  `stdin=DEVNULL`, and a process-tree kill.
-- **A corpus fetch downloaded 151 files and deleted every one.** The validation step called
-  Windows Python with an MSYS path (`/c/Users/...`), which it resolves as a Windows path that
-  does not exist — so validation failed for each file and the retry loop removed a download
-  that was fine.
 
 ## Also worth reading
 
