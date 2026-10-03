@@ -47,7 +47,8 @@ Of those analysed:
 
 | | books | wild |
 |---|---:|---:|
-| **provably run top to bottom in a fresh kernel** | 260 (**89%**) | 70 (**66%**) |
+| **provably run top to bottom in a fresh kernel** | 226 (**78%**) | 55 (**52%**) |
+| undecidable: star-import, or a cell that does not parse | 55 (19%) | 48 (45%) |
 | use a name that is defined in no cell at all | 30 (10%) | 35 (**33%**) |
 | use a name before the cell that defines it | 4 (1%) | 10 (9%) |
 | were last run out of document order | 17 (6%) | 16 (15%) |
@@ -62,8 +63,15 @@ Of those analysed:
 is assigned in no cell, imported in no cell, and is not a builtin. It came from a cell that
 has since been deleted, or from a kernel somebody had been typing into for an hour.
 
+The first two rows were revised after the audit stopped calling a notebook with an
+unparseable cell "runs top to bottom" (it was 260 / 89% and 70 / 66%). They are recomputed
+from the per-notebook `runs_top_to_bottom` and `syntax_errors` fields in
+`survey_books.json` / `survey_wild.json`; every other row is unchanged by that fix.
+
 **"Provably" is load-bearing.** A star-import binds names static analysis cannot see, so those
-notebooks are counted in neither direction. 22% of the wild corpus star-imports, so 66% is a
+notebooks are counted in neither direction, and so are notebooks with a cell that does not
+parse - it raises SyntaxError in a fresh kernel, or is IPython syntax not modelled here, and
+either way hides its bindings. 45% of the wild corpus is undecidable, so 52% is a
 floor, not an estimate.
 
 **Cells that were never run: 1% against 69%.** A book ships with every cell executed. An
@@ -82,7 +90,7 @@ Books use magics to *present*. Ordinary notebooks use them to install packages a
 around the filesystem — `!shell` and `%pip` together outnumber everything else, which is
 also why so few of them run anywhere but the machine they were written on.
 
-**16% and 26% of cells do not parse at all.** Reading them, these are pasted `In [1]:`
+**16% and 26% of notebooks contain a cell that does not parse.** Reading them, these are pasted `In [1]:`
 transcripts and smart quotes from copy-paste (`print('Prediction {}".format(...)`).
 
 ---

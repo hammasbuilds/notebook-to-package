@@ -7,13 +7,14 @@ NOTEBOOK SURVEY - C:\Users\dell\AppData\Local\Temp\claude\d--github\9ecf52ac-913
 291 analysed, 4611 code cells
 
 Of the notebooks analysed:
-    260    89%  provably run top to bottom in a fresh kernel
+    226    78%  provably run top to bottom in a fresh kernel
      30    10%  use a name that is never defined anywhere
       4     1%  use a name before the cell that defines it
      17     6%  were last run out of document order
       4     1%  contain a cell that was never run
     204    70%  contain IPython magics or shell escapes
       8     3%  star-import, so the question is undecidable
+     55    19%  undecidable (star-import or a cell that does not parse)
      47    16%  contain a cell that does not parse
 
 Most common magics:

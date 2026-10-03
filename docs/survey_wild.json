@@ -6,8 +6,7 @@
   "empty": 0,
   "analysed": 106,
   "code_cells": 3264,
-  "runs_top_to_bottom": 70,
-  "undecidable_star_import": 23,
+  "runs_top_to_bottom": 55,
   "with_never_defined": 35,
   "with_used_before_defined": 10,
   "with_out_of_order_execution": 16,
@@ -56,7 +55,7 @@
       1
     ]
   ],
-  "share_running_top_to_bottom": 0.6604,
+  "share_running_top_to_bottom": 0.5189,
   "notebooks": [
     {
       "path": "Financial-Data-Science-in-Python/60_40_Equities_and_Gold.ipynb",
@@ -956,7 +955,7 @@
       "star_imports": [],
       "magics": 2,
       "syntax_errors": 21,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "In",
         "Out",
@@ -1117,7 +1116,7 @@
       "star_imports": [],
       "magics": 1,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1276,7 +1275,7 @@
       "star_imports": [],
       "magics": 17,
       "syntax_errors": 2,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "index"
       ]
@@ -1298,7 +1297,7 @@
       "star_imports": [],
       "magics": 12,
       "syntax_errors": 4,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "GridSearchCV",
         "SMOTEENN",
@@ -1322,7 +1321,7 @@
       "star_imports": [],
       "magics": 1,
       "syntax_errors": 2,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "KMeans",
         "X",
@@ -1361,7 +1360,7 @@
       "star_imports": [],
       "magics": 1,
       "syntax_errors": 9,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "Q1",
         "Q2",
@@ -1396,7 +1395,7 @@
       "star_imports": [],
       "magics": 12,
       "syntax_errors": 1,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1410,7 +1409,7 @@
       "star_imports": [],
       "magics": 0,
       "syntax_errors": 2,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1494,7 +1493,7 @@
       "star_imports": [],
       "magics": 0,
       "syntax_errors": 3,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1511,7 +1510,7 @@
       "star_imports": [],
       "magics": 1,
       "syntax_errors": 2,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "index",
         "seriesName"
@@ -1620,7 +1619,7 @@
       "star_imports": [],
       "magics": 1,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1716,7 +1715,7 @@
       "star_imports": [],
       "magics": 0,
       "syntax_errors": 2,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "In",
         "X",
@@ -1801,7 +1800,7 @@
       "star_imports": [],
       "magics": 7,
       "syntax_errors": 1,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "MiceImputed",
         "yhc_pred"
@@ -1818,7 +1817,7 @@
       "star_imports": [],
       "magics": 13,
       "syntax_errors": 7,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1832,7 +1831,7 @@
       "star_imports": [],
       "magics": 10,
       "syntax_errors": 8,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1846,7 +1845,7 @@
       "star_imports": [],
       "magics": 32,
       "syntax_errors": 10,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1874,7 +1873,7 @@
       "star_imports": [],
       "magics": 11,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1930,7 +1929,7 @@
       "star_imports": [],
       "magics": 20,
       "syntax_errors": 12,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1944,7 +1943,7 @@
       "star_imports": [],
       "magics": 13,
       "syntax_errors": 7,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1958,7 +1957,7 @@
       "star_imports": [],
       "magics": 9,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1974,7 +1973,7 @@
       "star_imports": [],
       "magics": 7,
       "syntax_errors": 1,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "model_tag"
       ]
@@ -1990,7 +1989,7 @@
       "star_imports": [],
       "magics": 13,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2032,7 +2031,7 @@
       "star_imports": [],
       "magics": 14,
       "syntax_errors": 2,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2158,7 +2157,7 @@
       "star_imports": [],
       "magics": 7,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2186,7 +2185,7 @@
       "star_imports": [],
       "magics": 6,
       "syntax_errors": 7,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2465,5 +2464,6 @@
       "runs_top_to_bottom": true,
       "never_defined_names": []
     }
-  ]
+  ],
+  "undecidable": 48
 }

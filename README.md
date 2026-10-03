@@ -15,7 +15,7 @@
   <img src="https://img.shields.io/badge/python-3.11%2B-blue" alt="python">
   <img src="https://img.shields.io/badge/runtime%20deps-0-brightgreen" alt="zero dependencies">
   <img src="https://img.shields.io/badge/model-none%20required-success" alt="no model">
-  <img src="https://img.shields.io/badge/tests-91-brightgreen" alt="tests">
+  <img src="https://img.shields.io/badge/tests-104-brightgreen" alt="tests">
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-green" alt="license"></a>
 </p>
 
@@ -66,7 +66,8 @@ repositories, written to get work done.
 
 | | books (291) | wild (106) |
 |---|---:|---:|
-| **provably run top to bottom in a fresh kernel** | **89%** | **66%** |
+| **provably run top to bottom in a fresh kernel** | **78%** | **52%** |
+| undecidable: star-import, or a cell that does not parse | 19% | 45% |
 | use a name that is defined in no cell at all | 10% | **33%** |
 | use a name before the cell that defines it | 1% | 9% |
 | contain a cell that is not valid Python | 16% | 26% |
@@ -78,8 +79,9 @@ repositories, written to get work done.
 came from a cell that has since been deleted. Nobody can run that file from clean — not the
 author, not next year, not you.
 
-"Provably" is not hedging. A star-import binds names static analysis cannot see, so those
-notebooks are counted in neither direction and 66% is a floor.
+"Provably" is not hedging. A star-import binds names static analysis cannot see, and a cell
+that does not parse hides whatever it binds, so those notebooks are counted in neither
+direction and 52% is a floor.
 
 ### Does the conversion preserve behaviour?
 
@@ -141,6 +143,7 @@ cd notebook-to-package
 uv venv && uv pip install -e ".[dev]"
 
 ntp audit analysis.ipynb            # could it run top to bottom? exits 1 if not
+ntp audit analysis.ipynb --strict   # ...and exit 1 when it cannot be decided
 ntp convert analysis.ipynb ./pkg    # write an installable package
 ntp verify analysis.ipynb --python /path/to/env/bin/python   # run both, compare
 
@@ -150,7 +153,7 @@ ntp bench  ~/notebooks --python ...  # convert and verify every one of them
 
 `ntp audit` exits non-zero when a notebook cannot run from clean, which makes it a
 pre-commit hook. `ntp verify` exits non-zero **only** when the conversion is shown to be
-wrong — a notebook that fails on its own proves nothing and must not fail a build.
+wrong - a value differs, or the notebook ran and the package raised — a notebook that fails on its own proves nothing and must not fail a build.
 
 ## Layout
 
@@ -184,6 +187,11 @@ src/notebook_to_package/
 - **The static audit is syntactic.** A name bound by `exec`, by `globals()[...]`, or by a
   star-import is invisible and would be reported as undefined — so star-imports are detected
   and the notebook is excused rather than accused.
+- **Top-level `await` is not supported.** Jupyter allows it; a plain script does not, so
+  such a notebook gets no verdict.
+- **Definitions are hoisted only when that is safe.** A class body, decorator or default
+  argument that reads a value computed in a cell runs at definition time, so that
+  definition stays inside the entry function, in its original place.
 - **Both corpora are convenience samples.** Four published books and ten repositories from
   one GitHub search. The books/wild gap is large enough to be worth reporting; its exact size
   is not.

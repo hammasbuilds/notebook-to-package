@@ -6,8 +6,7 @@
   "empty": 67,
   "analysed": 291,
   "code_cells": 4611,
-  "runs_top_to_bottom": 260,
-  "undecidable_star_import": 8,
+  "runs_top_to_bottom": 226,
   "with_never_defined": 30,
   "with_used_before_defined": 4,
   "with_out_of_order_execution": 17,
@@ -56,7 +55,7 @@
       6
     ]
   ],
-  "share_running_top_to_bottom": 0.8935,
+  "share_running_top_to_bottom": 0.7766,
   "notebooks": [
     {
       "path": "cookbook-2nd-code/chapter01_basic_01_notebook.ipynb",
@@ -69,7 +68,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -97,7 +96,7 @@
       "star_imports": [],
       "magics": 6,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -133,7 +132,7 @@
       "star_imports": [],
       "magics": 8,
       "syntax_errors": 2,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -147,7 +146,7 @@
       "star_imports": [],
       "magics": 10,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -179,7 +178,7 @@
       "star_imports": [],
       "magics": 0,
       "syntax_errors": 14,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "l",
         "ls",
@@ -215,7 +214,7 @@
       "star_imports": [],
       "magics": 0,
       "syntax_errors": 14,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "a",
         "ls",
@@ -236,7 +235,7 @@
       "star_imports": [],
       "magics": 0,
       "syntax_errors": 19,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "ls",
         "pwd"
@@ -355,7 +354,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 2,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -383,7 +382,7 @@
       "star_imports": [],
       "magics": 1,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -397,7 +396,7 @@
       "star_imports": [],
       "magics": 7,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -589,7 +588,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 2,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -605,7 +604,7 @@
       "star_imports": [],
       "magics": 5,
       "syntax_errors": 1,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "m"
       ]
@@ -651,7 +650,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 1,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "run"
       ]
@@ -669,7 +668,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 1,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "run"
       ]
@@ -687,7 +686,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 1,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "run"
       ]
@@ -705,7 +704,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 1,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "run"
       ]
@@ -723,7 +722,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 1,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "run"
       ]
@@ -741,7 +740,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 1,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "run"
       ]
@@ -834,7 +833,7 @@
       "star_imports": [],
       "magics": 0,
       "syntax_errors": 11,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "end",
         "f",
@@ -901,7 +900,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 2,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -1065,7 +1064,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2397,7 +2396,7 @@
       "star_imports": [],
       "magics": 0,
       "syntax_errors": 1,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "pd",
         "plt",
@@ -2415,7 +2414,7 @@
       "star_imports": [],
       "magics": 0,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2625,7 +2624,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 4,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2639,7 +2638,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2655,7 +2654,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 1,
-      "runs_top_to_bottom": false,
+      "runs_top_to_bottom": null,
       "never_defined_names": [
         "unicode"
       ]
@@ -2671,7 +2670,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2685,7 +2684,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2699,7 +2698,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2713,7 +2712,7 @@
       "star_imports": [],
       "magics": 2,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2741,7 +2740,7 @@
       "star_imports": [],
       "magics": 6,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2755,7 +2754,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2769,7 +2768,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2783,7 +2782,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 3,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2797,7 +2796,7 @@
       "star_imports": [],
       "magics": 5,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2811,7 +2810,7 @@
       "star_imports": [],
       "magics": 0,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2825,7 +2824,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2839,7 +2838,7 @@
       "star_imports": [],
       "magics": 2,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2853,7 +2852,7 @@
       "star_imports": [],
       "magics": 2,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2867,7 +2866,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 2,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2881,7 +2880,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2917,7 +2916,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2931,7 +2930,7 @@
       "star_imports": [],
       "magics": 3,
       "syntax_errors": 2,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -2945,7 +2944,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -3197,7 +3196,7 @@
       "star_imports": [],
       "magics": 0,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -3295,7 +3294,7 @@
       "star_imports": [],
       "magics": 4,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -3939,7 +3938,7 @@
       "star_imports": [],
       "magics": 0,
       "syntax_errors": 1,
-      "runs_top_to_bottom": true,
+      "runs_top_to_bottom": null,
       "never_defined_names": []
     },
     {
@@ -4446,5 +4445,6 @@
       "runs_top_to_bottom": true,
       "never_defined_names": []
     }
-  ]
+  ],
+  "undecidable": 55
 }
