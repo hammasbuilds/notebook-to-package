@@ -54,6 +54,11 @@ def main(argv: list[str] | None = None) -> int:
     a = sub.add_parser("audit", help="could this notebook run top to bottom?")
     a.add_argument("notebook", type=Path)
     a.add_argument("--json", type=Path)
+    a.add_argument(
+        "--strict",
+        action="store_true",
+        help="also exit 1 when the answer cannot be decided (star-import, unparseable cell)",
+    )
 
     s = sub.add_parser("survey", help="audit every notebook under a directory")
     s.add_argument("directory", type=Path)
@@ -106,7 +111,9 @@ def main(argv: list[str] | None = None) -> int:
         if args.json:
             report_mod.write_json(report_mod.as_json(result), args.json)
             print(f"\nwrote {args.json}")
-        return 0 if result.runs_top_to_bottom is not False else 1
+        if result.runs_top_to_bottom is None:
+            return 1 if args.strict else 0
+        return 0 if result.runs_top_to_bottom else 1
 
     if args.cmd == "survey":
         s = survey_mod.survey(args.directory, progress=None if args.quiet else _say)

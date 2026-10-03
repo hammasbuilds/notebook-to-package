@@ -37,7 +37,7 @@ class Survey:
     with_unrun_cells: int = 0
     runs_top_to_bottom: int = 0
     undecidable: int = 0
-    """Star-imports bind unknown names, so the question cannot be answered from syntax."""
+    """A star-import or an unparseable cell hides bindings, so syntax cannot answer."""
 
     cells: int = 0
     magic_kinds: Counter = field(default_factory=Counter)
@@ -54,7 +54,7 @@ class Survey:
             "analysed": self.analysed,
             "code_cells": self.cells,
             "runs_top_to_bottom": self.runs_top_to_bottom,
-            "undecidable_star_import": self.undecidable,
+            "undecidable": self.undecidable,
             "with_never_defined": self.with_never_defined,
             "with_used_before_defined": self.with_used_before_defined,
             "with_out_of_order_execution": self.with_out_of_order,
@@ -115,6 +115,7 @@ def survey(root: Path, progress=None) -> Survey:
             s.with_magics += 1
         if a.star_imports:
             s.with_star_imports += 1
+        if a.runs_top_to_bottom is None:
             s.undecidable += 1
         if any(c.syntax_error for c in nb.cells):
             s.with_syntax_errors += 1
@@ -163,6 +164,7 @@ def text(s: Survey) -> str:
     out.append(row("contain a cell that was never run", s.with_unrun_cells))
     out.append(row("contain IPython magics or shell escapes", s.with_magics))
     out.append(row("star-import, so the question is undecidable", s.with_star_imports))
+    out.append(row("undecidable (star-import or a cell that does not parse)", s.undecidable))
     out.append(row("contain a cell that does not parse", s.with_syntax_errors))
     out.append("")
 

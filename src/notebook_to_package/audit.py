@@ -68,10 +68,19 @@ class Audit:
 
     @property
     def runs_top_to_bottom(self) -> bool | None:
-        """None when a star-import makes the question unanswerable from syntax alone."""
-        if self.star_imports:
+        """None when the question cannot be decided from syntax alone.
+
+        Undecidable: a star-import binds names syntax cannot see, and a cell that does not
+        parse either raises SyntaxError in a fresh kernel or is IPython syntax this does not
+        model - and in both cases its bindings are invisible. Neither is "provably runs".
+        """
+        if self.star_imports or self.unparsed:
             return None
         return not self.never_defined and not self.used_before_defined
+
+    @property
+    def unparsed(self) -> list[int]:
+        return [c.index for c in self.notebook.cells if c.syntax_error]
 
     def summary(self) -> dict:
         return {

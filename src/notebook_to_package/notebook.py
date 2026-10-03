@@ -67,6 +67,8 @@ class Notebook:
     path: Path
     cells: list[Cell] = field(default_factory=list)
     language: str = "python"
+    python_version: str = ""
+    """`metadata.language_info.version` - the kernel the notebook last ran under."""
     unreadable: str | None = None
 
     @property
@@ -126,6 +128,7 @@ def read(path: Path) -> Notebook:
         (meta.get("language_info") or {}).get("name")
     )
     nb.language = (lang or "python").lower()
+    nb.python_version = str((meta.get("language_info") or {}).get("version") or "")
 
     for i, raw_cell in enumerate(raw.get("cells") or []):
         if raw_cell.get("cell_type") != "code":

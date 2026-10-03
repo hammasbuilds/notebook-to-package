@@ -31,7 +31,9 @@ the notebook: it wrote a file, trained a model, printed the answer.
 from __future__ import annotations
 
 import ast
+import keyword
 import re
+import sys
 from dataclasses import dataclass, field
 
 from notebook_to_package.notebook import Cell, Notebook
@@ -44,7 +46,17 @@ def module_name(stem: str) -> str:
     name = _IDENT.sub("_", stem).strip("_").lower()
     if not name or name[0].isdigit():
         name = f"nb_{name}"
+    # `lambda.ipynb` would become `import lambda` - a SyntaxError - and `json.ipynb` a package
+    # that shadows the standard library for everything installed beside it.
+    if keyword.iskeyword(name) or name in sys.stdlib_module_names:
+        name = f"{name}_nb"
     return name
+
+
+#: Entry-point names tried in order; the first one the notebook does not bind is used. A
+#: notebook with its own `def main()` would otherwise have it replaced by the generated one,
+#: and the generated main() calling the user's main() recurses forever.
+ENTRY_CANDIDATES = ("main", "run_notebook", "run_all_cells", "_ntp_main")
 
 
 @dataclass
@@ -53,8 +65,14 @@ class Converted:
     """The generated Python source."""
 
     name: str
+    entry: str = "main"
+    """The generated function that runs the notebook's statements."""
+
     imports: int = 0
     definitions: int = 0
+    kept_in_main: list[str] = field(default_factory=list)
+    """Definitions left in place because defining them reads a value main() computes."""
+
     statements: int = 0
     globals_declared: list[str] = field(default_factory=list)
     dropped_magics: list[str] = field(default_factory=list)
@@ -86,7 +104,77 @@ def _free_names(node: ast.AST) -> set[str]:
                     bound.add(a.asname or a.name.split(".")[0])
         elif isinstance(child, ast.ExceptHandler) and child.name:
             bound.add(child.name)
-    return used - bound
+    # `global n; n += 1` stores n, which the loop above records as a local binding. It is
+    # the opposite: a write to the module global, which must therefore exist there.
+    return (used - bound) | _declared_global(node)
+
+
+def _is_main_guard(stmt: ast.stmt) -> bool:
+    """`if __name__ == "__main__":` at the top of a cell (either operand order)."""
+    if not isinstance(stmt, ast.If) or not isinstance(stmt.test, ast.Compare):
+        return False
+    t = stmt.test
+    if len(t.ops) != 1 or not isinstance(t.ops[0], ast.Eq):
+        return False
+    sides = [t.left, t.comparators[0]]
+    names = [s for s in sides if isinstance(s, ast.Name) and s.id == "__name__"]
+    consts = [s for s in sides if isinstance(s, ast.Constant) and s.value == "__main__"]
+    return len(names) == 1 and len(consts) == 1
+
+
+def _declared_global(node: ast.AST) -> set[str]:
+    out: set[str] = set()
+    for child in ast.walk(node):
+        if isinstance(child, ast.Global):
+            out.update(child.names)
+    return out
+
+
+def _eager_names(node: ast.AST) -> set[str]:
+    """Names a definition reads *while being defined*, not when later called.
+
+    Decorators, default values and base classes are evaluated by the `def`/`class`
+    statement itself, and so is every statement of a class body. A definition reading
+    such a name cannot be hoisted above main(): at import time main() has not run, and
+    `class A: k = K` raises NameError where the notebook worked.
+    """
+    out: set[str] = set()
+
+    def reads(expr: ast.AST | None) -> None:
+        if expr is None:
+            return
+        for c in ast.walk(expr):
+            if isinstance(c, ast.Name) and isinstance(c.ctx, ast.Load):
+                out.add(c.id)
+
+    def visit(n: ast.AST, local: set[str]) -> None:
+        if isinstance(n, ast.FunctionDef | ast.AsyncFunctionDef):
+            for d in n.decorator_list:
+                reads(d)
+            for d in n.args.defaults + [k for k in n.args.kw_defaults if k is not None]:
+                reads(d)
+            return
+        if isinstance(n, ast.Lambda):
+            for d in n.args.defaults + [k for k in n.args.kw_defaults if k is not None]:
+                reads(d)
+            return
+        if isinstance(n, ast.ClassDef):
+            for d in n.decorator_list + n.bases + [k.value for k in n.keywords]:
+                reads(d)
+            inner: set[str] = set()
+            for stmt in n.body:
+                visit(stmt, inner)
+                inner |= _bound_at_top(stmt)
+            return
+        if isinstance(n, ast.Name) and isinstance(n.ctx, ast.Load):
+            # A class-body name assigned earlier in the same body is not a module read.
+            if n.id not in local:
+                out.add(n.id)
+        for c in ast.iter_child_nodes(n):
+            visit(c, local)
+
+    visit(node, set())
+    return out
 
 
 def _bound_at_top(node: ast.stmt) -> set[str]:
@@ -120,8 +208,7 @@ def convert(nb: Notebook, name: str = "") -> Converted:
     out = Converted(module="", name=name)
 
     imports: list[ast.stmt] = []
-    definitions: list[ast.stmt] = []
-    body: list[ast.stmt] = []
+    ordered: list[ast.stmt] = []
 
     for cell in nb.cells:
         src = _strip_magics(cell)
@@ -139,10 +226,43 @@ def convert(nb: Notebook, name: str = "") -> Converted:
         for stmt in tree.body:
             if isinstance(stmt, ast.Import | ast.ImportFrom):
                 imports.append(stmt)
-            elif isinstance(stmt, ast.FunctionDef | ast.AsyncFunctionDef | ast.ClassDef):
-                definitions.append(stmt)
+            elif _is_main_guard(stmt):
+                # In a notebook __name__ is "__main__", so the guarded block always runs.
+                # Inside the package it would never run: main() executes under the module's
+                # name. The block is what the cell did, so keep exactly that.
+                ordered.extend(stmt.body)
             else:
-                body.append(stmt)
+                ordered.append(stmt)
+
+    defs = (ast.FunctionDef, ast.AsyncFunctionDef, ast.ClassDef)
+    bound_in_main: set[str] = set()
+    for stmt in ordered:
+        if not isinstance(stmt, defs):
+            bound_in_main |= _bound_at_top(stmt)
+
+    # A definition that reads, while being defined, something main() computes stays in
+    # main() at its own place. That makes its name a main() binding, which can pin further
+    # definitions, so repeat until nothing moves.
+    kept: set[int] = set()
+    changed = True
+    while changed:
+        changed = False
+        for i, stmt in enumerate(ordered):
+            if i in kept or not isinstance(stmt, defs):
+                continue
+            if _eager_names(stmt) & bound_in_main:
+                kept.add(i)
+                bound_in_main.add(stmt.name)
+                changed = True
+
+    definitions = [s for i, s in enumerate(ordered) if isinstance(s, defs) and i not in kept]
+    body = [s for i, s in enumerate(ordered) if not isinstance(s, defs) or i in kept]
+    out.kept_in_main = [ordered[i].name for i in sorted(kept)]
+
+    taken = set(bound_in_main)
+    for st in imports + definitions:
+        taken |= _bound_at_top(st)
+    out.entry = next(c for c in ENTRY_CANDIDATES if c not in taken)
 
     # Names the module-level definitions read but do not bind. Anything main() binds that
     # appears here has to stay a module global or those definitions break.
@@ -150,9 +270,9 @@ def convert(nb: Notebook, name: str = "") -> Converted:
     for d in definitions:
         read_by_definitions |= _free_names(d)
 
-    bound_in_main: set[str] = set()
+    # A function kept inside main() that says `global n` writes the module global too.
     for stmt in body:
-        bound_in_main |= _bound_at_top(stmt)
+        read_by_definitions |= _declared_global(stmt)
 
     needs_global = sorted(bound_in_main & read_by_definitions)
     out.globals_declared = needs_global
@@ -160,7 +280,7 @@ def convert(nb: Notebook, name: str = "") -> Converted:
     out.definitions = len(definitions)
     out.statements = len(body)
 
-    out.module = _render(nb, name, imports, definitions, body, needs_global)
+    out.module = _render(nb, name, imports, definitions, body, needs_global, out.entry)
     return out
 
 
@@ -171,12 +291,13 @@ def _render(
     definitions: list[ast.stmt],
     body: list[ast.stmt],
     needs_global: list[str],
+    entry: str = "main",
 ) -> str:
     lines = [
         '"""Generated from ' + nb.path.name + " by notebook-to-package.",
         "",
         "Cells are kept in document order. Imports are hoisted, definitions are module",
-        "level, and the remaining statements run in main().",
+        f"level, and the remaining statements run in {entry}().",
         '"""',
         "",
         "from __future__ import annotations",
@@ -191,7 +312,7 @@ def _render(
         lines.append("")
         lines.append("")
 
-    lines.append("def main():")
+    lines.append(f"def {entry}():")
     if needs_global:
         lines.append("    # Read by the module-level definitions above, so these must stay")
         lines.append("    # module globals rather than becoming locals of main().")
@@ -207,5 +328,5 @@ def _render(
     lines.append("")
     lines.append("")
     lines.append('if __name__ == "__main__":')
-    lines.append("    main()")
+    lines.append(f"    {entry}()")
     return "\n".join(lines) + "\n"

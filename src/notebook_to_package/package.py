@@ -17,6 +17,7 @@ Standard-library imports are dropped from the dependency list by checking
 from __future__ import annotations
 
 import ast
+import re
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -100,7 +101,7 @@ dependencies = [
 {deps}]
 
 [project.scripts]
-{dist} = "{pkg}.{module}:main"
+{dist} = "{pkg}.{module}:{entry}"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/{pkg}"]
@@ -113,10 +114,22 @@ The notebook's code lives in `{module}`. Import what you need from there, or run
 `{dist}` to execute it end to end.
 """
 
-from {pkg}.{module} import main
+from {pkg}.{module} import {entry}
 
-__all__ = ["main"]
+__all__ = ["{entry}"]
 '''
+
+
+def _python_floor(nb: Notebook) -> str:
+    """The kernel version the notebook recorded, else the oldest this tool supports.
+
+    Not this interpreter's version: converting on 3.14 must not produce a package that
+    refuses to install on the 3.11 kernel the notebook actually ran under.
+    """
+    m = re.match(r"(\d+)\.(\d+)", nb.python_version or "")
+    if m and int(m.group(1)) == 3:
+        return f"3.{m.group(2)}"
+    return "3.11"
 
 
 def write(nb: Notebook, conv: Converted, into: Path, force: bool = False) -> Written:
@@ -136,15 +149,18 @@ def write(nb: Notebook, conv: Converted, into: Path, force: bool = False) -> Wri
             module=conv.name,
             source=nb.path.name,
             deps=dep_lines,
-            pyver=f"{sys.version_info.major}.{sys.version_info.minor}",
+            pyver=_python_floor(nb),
+            entry=conv.entry,
         ),
-        src / "__init__.py": INIT.format(dist=dist, pkg=pkg, module=conv.name, source=nb.path.name),
+        src / "__init__.py": INIT.format(
+            dist=dist, pkg=pkg, module=conv.name, source=nb.path.name, entry=conv.entry
+        ),
         src / f"{conv.name}.py": conv.module,
     }
 
     for path, body in files.items():
         if path.exists() and not force:
-            raise FileExistsError(f"{path} exists; pass force=True to overwrite")
+            raise FileExistsError(f"{path} exists; pass --force (force=True) to overwrite")
         path.write_text(body, encoding="utf-8", newline="\n")
         w.files.append(path)
     return w

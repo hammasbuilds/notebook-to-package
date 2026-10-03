@@ -30,10 +30,18 @@ def audit_text(a: Audit) -> str:
     if verdict is True:
         out.append("Runs top to bottom in a fresh kernel: nothing is read before it exists.")
     elif verdict is None:
-        out.append(
-            "Cannot be decided: a star-import binds names this cannot see, so anything "
-            "below may be a false alarm."
-        )
+        if a.star_imports:
+            out.append(
+                "Cannot be decided: a star-import binds names this cannot see, so anything "
+                "below may be a false alarm."
+            )
+        if a.unparsed:
+            cells = ", ".join(str(i) for i in a.unparsed[:10])
+            out.append(
+                f"Cannot be decided: cell(s) {cells} are not valid Python. In a fresh kernel "
+                "such a cell raises SyntaxError (unless it is IPython syntax this does not "
+                "model), and whatever it binds is invisible here."
+            )
     else:
         out.append("Does NOT run top to bottom as written.")
     out.append("")
@@ -120,8 +128,19 @@ def verify_text(conv: Converted, v: Verdict) -> str:
     out.append("")
 
     if v.faithful is None:
-        out.append("No verdict: at least one side did not run, so there is nothing to")
-        out.append("compare. This is not evidence that the conversion is wrong.")
+        if v.control_failed:
+            out.append("No verdict: the notebook ran once and failed on its second run, so")
+            out.append("it is flaky on its own. This is not evidence about the conversion.")
+        elif v.notebook.ok and v.package.timed_out:
+            out.append("No verdict: the package ran out of time. Raise --timeout and retry.")
+        else:
+            out.append("No verdict: the notebook itself did not run here, so there is nothing")
+            out.append("to compare. This is not evidence that the conversion is wrong.")
+        return "\n".join(out)
+
+    if not v.package.ok:
+        out.append("NOT FAITHFUL - the notebook ran, and the generated package raised.")
+        out.append("That is a conversion bug: the rearranging broke something that worked.")
         return "\n".join(out)
 
     if v.faithful:

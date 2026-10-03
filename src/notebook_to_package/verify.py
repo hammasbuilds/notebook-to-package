@@ -67,6 +67,8 @@ _ADDR = re.compile(r"0x[0-9a-fA-F]{4,}")
 IGNORED = set(json.loads(sys.argv[3]))
 
 OWN = sys.argv[4]
+ENTRY = sys.argv[5] if len(sys.argv) > 5 else "main"
+IGNORED.add(ENTRY)
 
 def digest(v):
     try:
@@ -114,9 +116,9 @@ try:
         module = importlib.util.module_from_spec(spec)
         sys.modules["ntp_generated"] = module
         spec.loader.exec_module(module)
-        fn = getattr(module, "main", None)
+        fn = getattr(module, ENTRY, None)
         if fn is None:
-            raise RuntimeError("generated module has no main()")
+            raise RuntimeError("generated module has no " + ENTRY + "()")
 
         # main()'s locals are the other half of the answer. The notebook leaves every
         # scratch variable a module global; the package deliberately does not, so comparing
@@ -125,7 +127,11 @@ try:
         captured = {}
 
         def _outer(frame, event, arg):
-            if event == "call" and frame.f_code.co_name == "main":
+            if (
+                event == "call"
+                and frame.f_code.co_name == ENTRY
+                and frame.f_globals is vars(module)
+            ):
                 def _inner(f, ev, a):
                     if ev == "return":
                         captured.update(f.f_locals)
@@ -171,6 +177,9 @@ class Verdict:
     only_notebook: list[str] = field(default_factory=list)
     only_package: list[str] = field(default_factory=list)
     skipped_opaque: list[str] = field(default_factory=list)
+    control_failed: bool = False
+    """The notebook ran once and failed the second time - it is flaky on its own."""
+
     nondeterministic: list[str] = field(default_factory=list)
     """Names that differed between two runs of the **notebook itself**.
 
@@ -190,9 +199,17 @@ class Verdict:
 
     @property
     def faithful(self) -> bool | None:
-        """None when neither side ran, so there is nothing to conclude."""
-        if not (self.notebook.ok and self.package.ok):
+        """None when nothing can be concluded; False when the conversion is shown wrong.
+
+        The notebook running while the generated package *raises* is a conversion failure,
+        not a missing verdict - the notebook proved it can run here. Only a package that ran
+        out of time, or a notebook that fails on its own (including its control run), leaves
+        the question open.
+        """
+        if not self.notebook.ok or self.control_failed:
             return None
+        if not self.package.ok:
+            return None if self.package.timed_out else False
         return not self.differs and not self.only_notebook and not self.only_package
 
 
@@ -231,6 +248,10 @@ RUN_ENV = {
     "MPLBACKEND": "Agg",
     "PYTHONDONTWRITEBYTECODE": "1",
     "PYTHONUNBUFFERED": "1",
+    # A notebook printing a non-ASCII character runs fine in Jupyter, whose output is not a
+    # console. Piped to a subprocess on Windows, stdout is cp1252 and print('✓') raises
+    # UnicodeEncodeError on both sides - a verdict lost to the harness, not to the notebook.
+    "PYTHONIOENCODING": "utf-8",
 }
 
 
@@ -261,7 +282,9 @@ def _kill_tree(proc: subprocess.Popen) -> None:
         pass
 
 
-def _run(mode: str, target: Path, python: str, timeout: float, cwd: Path) -> Run:
+def _run(
+    mode: str, target: Path, python: str, timeout: float, cwd: Path, entry: str = "main"
+) -> Run:
     with tempfile.NamedTemporaryFile("w", suffix=".py", delete=False, encoding="utf-8") as fh:
         fh.write(_HARNESS)
         harness = Path(fh.name)
@@ -274,6 +297,7 @@ def _run(mode: str, target: Path, python: str, timeout: float, cwd: Path) -> Run
         str(target),
         json.dumps(sorted(IGNORED)),
         "__main__" if mode == "script" else "ntp_generated",
+        entry,
     ]
     kwargs = {}
     if sys.platform != "win32":
@@ -288,6 +312,7 @@ def _run(mode: str, target: Path, python: str, timeout: float, cwd: Path) -> Run
             # process's stdin and wait for a key that is never pressed.
             stdin=subprocess.DEVNULL,
             text=True,
+            encoding="utf-8",
             cwd=cwd,
             env=env,
             errors="replace",
@@ -350,9 +375,10 @@ def verify(
 
         a = _run("script", script, python, timeout, cwd)
         control_run = _run("script", script, python, timeout, cwd) if control and a.ok else None
-        b = _run("module", module, python, timeout, cwd)
+        b = _run("module", module, python, timeout, cwd, entry=conv.entry)
 
     v = Verdict(notebook=a, package=b)
+    v.control_failed = control_run is not None and not control_run.ok
     if not (a.ok and b.ok):
         return v
 
