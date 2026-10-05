@@ -5,7 +5,7 @@
   .. 80/106 - 4 faithful, 0 broken, 76 unrunnable
   .. 100/106 - 4 faithful, 0 broken, 96 unrunnable
 ==========================================================================
-CONVERSION FIDELITY - C:\Users\dell\AppData\Local\Temp\claude\d--github\9ecf52ac-9133-4b3a-8b8b-0b0e578e4abb\scratchpad\nbwild2
+CONVERSION FIDELITY - <scratch>/nbwild2
 ==========================================================================
 106 notebooks attempted, 195.6s
 

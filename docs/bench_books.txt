@@ -17,7 +17,7 @@
   .. 320/359 - 86 faithful, 0 broken, 173 unrunnable
   .. 340/359 - 87 faithful, 0 broken, 190 unrunnable
 ==========================================================================
-CONVERSION FIDELITY - C:\Users\dell\AppData\Local\Temp\claude\d--github\9ecf52ac-9133-4b3a-8b8b-0b0e578e4abb\scratchpad\nbcorpus
+CONVERSION FIDELITY - <scratch>/nbcorpus
 ==========================================================================
 291 notebooks attempted, 1932.3s
 

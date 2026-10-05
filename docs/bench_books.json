@@ -1,5 +1,5 @@
 {
-  "root": "C:\\Users\\dell\\AppData\\Local\\Temp\\claude\\d--github\\9ecf52ac-9133-4b3a-8b8b-0b0e578e4abb\\scratchpad\\nbcorpus",
+  "root": "<scratch>/nbcorpus",
   "seconds": 1932.3,
   "attempted": 291,
   "unrunnable": 204,
@@ -1175,7 +1175,7 @@
       "faithful": null,
       "compared": 0,
       "nondeterministic": 0,
-      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: 'C:\\\\Users\\\\dell/Desktop/en.openfoodfacts.org.products.tsv'"
+      "notebook_error": "FileNotFoundError: [Errno 2] No such file or directory: '~/Desktop/en.openfoodfacts.org.products.tsv'"
     },
     {
       "path": "pandas_exercises/02_Filtering_&_Sorting_Chipotle_Exercises_with_solutions.ipynb",

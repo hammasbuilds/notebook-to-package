@@ -1,5 +1,5 @@
 ==========================================================================
-NOTEBOOK SURVEY - C:\Users\dell\AppData\Local\Temp\claude\d--github\9ecf52ac-9133-4b3a-8b8b-0b0e578e4abb\scratchpad\nbwild2
+NOTEBOOK SURVEY - <scratch>/nbwild2
 ==========================================================================
 106 notebooks found
 106 analysed, 3264 code cells
